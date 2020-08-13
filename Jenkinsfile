@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Run app') {
             steps {
-                sh 'sudo docker run -p my-app'
+                sh 'sudo docker run my-app'
             }
         }
     }
