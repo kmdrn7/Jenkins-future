@@ -20,12 +20,12 @@ pipeline {
         }
         stage('Build image') {
             steps {
-                sh 'docker build -t my-app .'
+                sh 'sudo docker build -t my-app .'
             }
         }
         stage('Run app') {
             steps {
-                sh 'docker run -p my-app'
+                sh 'sudo docker run -p my-app'
             }
         }
     }
